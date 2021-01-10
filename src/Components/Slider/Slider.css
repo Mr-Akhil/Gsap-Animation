@@ -1,0 +1,151 @@
+/* $text: #2e293c;
+$secondary: #a09dac; */
+ 
+.testimonial-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-section::after {
+  content: '';
+  position: absolute;
+  width: 900px;
+  height: 550px;
+  background: #f2f2f6;
+  right: 0;
+  bottom: 0;
+  opacity: .8;
+  z-index: -10 ;
+}
+
+.testimonial-container {
+  width: 1080px;
+  min-width: 1080px;
+  height: 100vh;
+  position: relative;
+}
+.arrow-left {
+  position: absolute;
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .3s ease-in-out;
+}
+.arrow-right {
+  position: absolute;
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .3s ease-in-out;
+  right: 0;
+}
+.arrow-left:hover, .arrow-right:hover {
+  box-shadow: 0 0 40px rgba(0,0,80,.09);
+}
+.inner {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.t-image {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t-image::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #3f56da;
+  left: 50px;
+  top: 25px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.t-image ul {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  height: 460px;
+  width: 340px;
+  box-shadow: 0 0 40px black;
+}
+.t-image ul li {
+  list-style-type: none;
+  height: 460px;
+  width: 340px;
+}
+
+.t-image img{
+  width: 340px;
+  height: 460px;
+}
+.arrow-left img, .arrow-right img{
+  width: 50px;
+  height: 50px;
+}
+
+.t-content {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.t-content ul {
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  height: 400px;
+}
+.t-content ul li {
+  width: 500px;
+  height: 400px;
+  color: #2e293c;
+  display: inline;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+}
+/* .t-content ul li:nth-child(1) {
+  opacity: 0;
+} */
+
+.quote {
+  font-size: 26px;
+  letter-spacing: 0.88px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 18px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  color: #a09dac;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 18px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  color: #a09dac;
+  
+}

@@ -1,0 +1,18 @@
+.circle-container {
+
+}
+
+.circle {
+ width: 75px;
+ height: 75px;
+ border-radius: 100%;
+ background: yellow;
+ margin: 50px;
+}
+
+.circle.red {
+  background-color: red;
+}
+.circle.blue {
+  background-color: blue;
+}
